@@ -1,0 +1,28 @@
+def decorator(fonk):
+    print("Mükemmmmmelll Sayi Listesi:")
+    def wrapper():
+        for sayi in range(2,1001):
+            i=1
+            liste=[]
+            while i<sayi:
+                if sayi%i==0:
+                    liste.append(i)
+                toplam=sum(liste)
+                i+=1
+            if sayi==toplam:
+                print(sayi)
+        fonk()
+    return wrapper
+@decorator               
+def asal():
+    print("Asal Sayi Listesi:")
+    for sayi in range(2,1001):
+        i=2
+        check=0
+        while i<sayi:
+            if sayi%i==0:
+                check+=1
+            i+=1
+        if check==0:
+            print(sayi)
+asal()

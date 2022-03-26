@@ -1,4 +1,4 @@
-# ddition of even numbers  till 100  in fibonacci squence
+# addition of even numbers  till 100  in fibonacci squence
 # first try:
 
 liste = [1,1]

@@ -17,5 +17,5 @@ while True:
         print(f"Multipication of two numbers ===> {a}*{b} =",a*b)
         break
     else:
-        print("Please enter a valid number.")
+        print("Please enter a valid number")
         

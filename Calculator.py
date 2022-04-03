@@ -1,16 +1,21 @@
-print("""Hesap MAkinasi Programi\n*********************************""")
-print ("1-Toplama\n 2-Cikarma\n 3-Bolme\n 4-CArpma")
-
-a=int(input("1.sayiyi girin:"))
-b=int(input("2.sayiyi girin:"))
-islem=int(input("isleminizi secin:"))
-if islem ==1:
-    print("toplam=",a+b)
-if islem ==2:
-    print("cikarma=",a-b)
-if islem ==3:
-    print("bolme=",a/b)
-if islem ==4:
-    print("Carpma=",a*b)
-else:
-    print("gecerli bir islem secin")
+print("""Menu \n*********************""")
+print ("1-Addition\n2-Substraction\n3-Division\n4-Multipication")
+while True:
+    a=int(input("Enter the first number:"))
+    b=int(input("Enter the second number:"))
+    n=int(input("What would you like to perform:"))
+    if n ==1:
+        print(f"Addition of two numbers ===> {a}+{b} =",a+b)
+        break
+    if n ==2:
+        print(f"Substraction of two numbers ===> {a}-{b} =",a-b)
+        break
+    if n ==3:
+        print(f"Division of two numbers ===> {a}/{b} =",a/b)
+        break
+    if n ==4:
+        print(f"Multipication of two numbers ===> {a}*{b} =",a*b)
+        break
+    else:
+        print("Please enter a valid number.")
+        
